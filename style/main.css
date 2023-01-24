@@ -1,0 +1,550 @@
+html body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(0deg, 0%, 100%);
+}
+html body nav {
+  display: flex;
+  background-color: #3EBEFF;
+  padding: 20px 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+html body nav ul {
+  display: flex;
+  list-style: none;
+  width: 35%;
+  justify-content: space-evenly;
+}
+html body nav ul li a {
+  text-decoration: none;
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Barlow", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+html body nav ul li a:hover {
+  color: hsl(198deg, 62%, 26%);
+}
+html body nav ul li .btn-primary {
+  color: hsl(212deg, 27%, 19%);
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  font-size: 12px;
+  font-weight: 900;
+}
+html body nav ul li .btn-primary:hover {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsla(0deg, 0%, 100%, 0.3);
+  transition: all 0.2s;
+}
+html body nav .hamburger {
+  display: none;
+}
+html body .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+html body .container .section {
+  display: flex;
+  width: 100%;
+}
+html body .container .section .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+html body .container .section .col img {
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 100%;
+     object-position: 0 100%;
+}
+html body .container .section .col h1 {
+  margin-top: 60px;
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 48px;
+  color: hsl(0deg, 0%, 100%);
+  position: absolute;
+}
+html body .container .section .col .arrow-down {
+  background: url(../images/icon-arrow-down.svg) no-repeat;
+  width: 36px;
+  height: 120px;
+  position: absolute;
+  margin-top: 180px;
+  border: none;
+}
+html body .container .section .col-banner-content {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  background-color: hsl(0deg, 0%, 100%);
+}
+html body .container .section .col-banner-content .content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 100px;
+  z-index: 1;
+}
+html body .container .section .col-banner-content .content h2 {
+  width: 100%;
+  font-family: "Fraunces", serif;
+  font-size: 44px;
+  margin: 10px 0;
+  color: hsl(212deg, 27%, 19%);
+}
+html body .container .section .col-banner-content .content p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  color: hsl(213deg, 9%, 39%);
+}
+html body .container .section .col-banner-content .content a.linkYellow {
+  width: 100px;
+  font-family: "Fraunces", serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: hsl(212deg, 27%, 19%);
+}
+html body .container .section .col-banner-content .content a.linkYellow:hover + .underlineYellow {
+  background: hsl(51deg, 100%, 49%);
+}
+html body .container .section .col-banner-content .content .underlineYellow {
+  background: hsla(51deg, 100%, 49%, 0.3);
+  border-radius: 10px;
+  min-height: 10px;
+  margin-top: -6px;
+  margin-left: -5px;
+  width: 109px;
+  z-index: -1;
+  transition: all 0.3s;
+}
+html body .container .section .col-banner-content .content a.linkRed {
+  width: 100px;
+  font-family: "Fraunces", serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: hsl(212deg, 27%, 19%);
+}
+html body .container .section .col-banner-content .content a.linkRed:hover + .underlineRed {
+  background: hsl(7deg, 99%, 70%);
+}
+html body .container .section .col-banner-content .content .underlineRed {
+  background: hsla(7deg, 99%, 70%, 0.3);
+  border-radius: 10px;
+  min-height: 10px;
+  margin-top: -6px;
+  margin-left: -5px;
+  width: 109px;
+  z-index: -1;
+  transition: all 0.3s;
+}
+html body .container .section .col-banner-image {
+  width: 50%;
+  height: 517px;
+}
+html body .container .section .col-banner-image img {
+  width: 100%;
+  height: 517px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+html body .container .section .col-banner-image-category {
+  width: 50%;
+  height: 517px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: end;
+  align-items: center;
+  text-align: center;
+}
+html body .container .section .col-banner-image-category img {
+  width: 100%;
+  height: 517px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 0;
+     object-position: 0 0;
+}
+html body .container .section .col-banner-image-category h3.graphicTxt {
+  position: absolute;
+  margin-bottom: 150px;
+  font-family: "Fraunces", serif;
+  font-size: 28px;
+  color: hsl(167deg, 40%, 24%);
+}
+html body .container .section .col-banner-image-category p.graphicTxt {
+  width: 50%;
+  position: absolute;
+  margin-bottom: 50px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: hsl(167deg, 40%, 24%);
+}
+html body .container .section .col-banner-image-category h3.photographyTxt {
+  position: absolute;
+  margin-bottom: 150px;
+  font-family: "Fraunces", serif;
+  font-size: 28px;
+  color: hsl(198deg, 62%, 26%);
+}
+html body .container .section .col-banner-image-category p.photographyTxt {
+  width: 50%;
+  position: absolute;
+  margin-bottom: 50px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: hsl(198deg, 62%, 26%);
+}
+html body .container .section .col-testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 100px auto;
+}
+html body .container .section .col-testimonials h3 {
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  color: hsl(210deg, 4%, 67%);
+}
+html body .container .section .col-testimonials .card-testimonials {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 75%;
+  margin-top: 30px;
+}
+html body .container .section .col-testimonials .card-testimonials .card {
+  padding: 15px;
+}
+html body .container .section .col-testimonials .card-testimonials .card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+html body .container .section .col-testimonials .card-testimonials .card p {
+  margin: 20px auto;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  line-height: 1.8;
+  font-size: 14px;
+  color: hsl(212deg, 27%, 19%);
+}
+html body .container .section .col-testimonials .card-testimonials .card .testimonialsName {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-family: "Fraunces", serif;
+  font-size: 16px;
+  color: hsl(212deg, 27%, 19%);
+}
+html body .container .section .col-testimonials .card-testimonials .card .testimonialsJob {
+  font-family: "Barlow", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: hsl(210deg, 4%, 67%);
+}
+html body .container .section .col-gallery {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+html body .container .section .col-gallery img {
+  width: 25%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+html body footer {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(168deg, 48%, 67%);
+  align-items: center;
+  padding: 60px;
+}
+html body footer .logo img {
+  width: 180px;
+}
+html body footer ul.nav-footer {
+  display: flex;
+  padding: 0;
+  width: 20%;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+html body footer ul.nav-footer li {
+  list-style: none;
+}
+html body footer ul.nav-footer li a {
+  text-decoration: none;
+  color: hsl(167deg, 40%, 24%);
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+html body footer ul.nav-footer li a:hover {
+  color: hsl(0deg, 0%, 100%);
+  transition: all 0.3s;
+}
+html body footer ul.social {
+  display: flex;
+  padding: 0;
+  width: 15%;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+html body footer ul.social li {
+  list-style: none;
+}
+html body footer ul.social li a {
+  text-decoration: none;
+  color: hsl(167deg, 40%, 24%);
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+html body footer ul.social li a:hover {
+  filter: brightness(0) invert(1);
+  transition: all 0.3s;
+}
+@media (max-width: 375px) {
+  html body nav {
+    padding: 30px 20px;
+  }
+  html body nav ul {
+    display: none;
+    flex-direction: column;
+  }
+  html body nav .hamburger {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    height: 17px;
+    justify-content: space-between;
+  }
+  html body nav .hamburger .bar {
+    display: block;
+    width: 28px;
+    height: 1px;
+    background-color: hsl(0deg, 0%, 100%);
+  }
+  html body nav .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  html body nav .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  html body nav .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  html body nav .nav-menu {
+    opacity: 0;
+    top: 90px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    text-align: center;
+    width: 89%;
+    background-color: hsl(0deg, 0%, 100%);
+    padding: 0;
+    z-index: 2;
+    height: 300px;
+    padding-bottom: 20px;
+  }
+  html body nav .nav-menu::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 95%;
+    width: 0;
+    height: 0;
+    border: 30px solid transparent;
+    border-bottom-color: #ffffff;
+    border-top: 0;
+    border-right: 0;
+    margin-left: -13px;
+    margin-top: -28px;
+  }
+  html body nav .nav-menu li a {
+    color: hsl(232deg, 10%, 55%);
+    font-weight: 600;
+    font-size: 20px;
+  }
+  html body nav .nav-menu li a:hover {
+    color: hsl(198deg, 62%, 26%);
+  }
+  html body nav .nav-menu li .btn-primary {
+    color: hsl(212deg, 27%, 19%);
+    background-color: hsl(51deg, 100%, 49%);
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-family: "Fraunces", serif;
+    font-size: 16px;
+    font-weight: 900;
+  }
+  html body nav .nav-menu li .btn-primary:hover {
+    color: hsl(0deg, 0%, 100%);
+    background-color: hsl(213deg, 9%, 39%);
+  }
+  html body nav .nav-menu.active {
+    opacity: 100%;
+  }
+  html body .container .section-transform :nth-of-type(1) {
+    order: 2;
+  }
+  html body .container .section-transform :nth-of-type(2) {
+    order: 1;
+  }
+  html body .container .section {
+    flex-direction: column;
+  }
+  html body .container .section .col {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  html body .container .section .col img {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 50%;
+       object-position: 50%;
+  }
+  html body .container .section .col h1 {
+    margin-top: 20px;
+    font-size: 32px;
+  }
+  html body .container .section .col .arrow-down {
+    margin-top: 160px;
+  }
+  html body .container .section .col-banner-content {
+    width: 100%;
+  }
+  html body .container .section .col-banner-content .content {
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  html body .container .section .col-banner-content .content h2 {
+    margin: 0;
+    margin-top: 30px;
+    font-size: 34px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  html body .container .section .col-banner-content .content p {
+    margin: 0;
+    padding: 0 30px;
+    line-height: 1.8;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  html body .container .section .col-banner-content .content .underlineYellow {
+    margin-bottom: 60px;
+  }
+  html body .container .section .col-banner-content .content .underlineRed {
+    margin-bottom: 60px;
+  }
+  html body .container .section .col-banner-image {
+    width: 100%;
+    height: 350px;
+  }
+  html body .container .section .col-banner-image img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  html body .container .section .col-banner-image-category {
+    width: 100%;
+  }
+  html body .container .section .col-banner-image-category img {
+    -o-object-position: 50% 0;
+       object-position: 50% 0;
+  }
+  html body .container .section .col-banner-image-category p.graphicTxt {
+    width: 80%;
+    font-size: 14px;
+    margin-bottom: 60px;
+    font-weight: 600;
+  }
+  html body .container .section .col-banner-image-category p.photographyTxt {
+    width: 80%;
+    font-size: 14px;
+    margin-bottom: 60px;
+    font-weight: 600;
+  }
+  html body .container .section .col-testimonials {
+    text-align: center;
+    margin: 40px auto;
+  }
+  html body .container .section .col-testimonials h3 {
+    font-size: 14px;
+    letter-spacing: 1;
+  }
+  html body .container .section .col-testimonials .card-testimonials {
+    flex-direction: column;
+    margin-top: 20px;
+    width: 90%;
+  }
+  html body .container .section .col-testimonials .card-testimonials .card {
+    margin-bottom: 20px;
+  }
+  html body .container .section .col-testimonials .card-testimonials .card img {
+    width: 80px;
+    height: 80px;
+  }
+  html body .container .section .col-testimonials .card-testimonials .card p {
+    margin: 5px auto;
+    font-weight: 600;
+    font-size: 16px;
+    color: hsl(213deg, 9%, 39%);
+  }
+  html body .container .section .col-testimonials .card-testimonials .card .testimonialsName {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  html body .container .section .col-testimonials .card-testimonials .card .testimonialsJob {
+    font-size: 14px;
+  }
+  html body .container .section .col-gallery img {
+    width: 50%;
+    height: 200px;
+  }
+  html body footer ul.nav-footer {
+    width: 100%;
+  }
+  html body footer ul.social {
+    width: 60%;
+  }
+}/*# sourceMappingURL=main.css.map */
